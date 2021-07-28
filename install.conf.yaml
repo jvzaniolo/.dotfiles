@@ -8,8 +8,13 @@
     ~/.zshrc:
     ~/.gitconfig:
     ~/.sheldon:
+      create: true
+      path: sheldon
 
 - create:
     - ~/Projects
-# - shell:
-#       - [git submodule update --init --recursive, Installing submodules]
+
+- shell:
+    - command: ./homebrew.zsh
+      stdout: true
+      stderr: true
