@@ -8,9 +8,16 @@ This is a repository on which I add some initial configuration to my macOS.
 - Homebrew with initial brews and casks
 
 ## Installation
-***via `curl`***
+First, [set up ssh](https://docs.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh).
+
+Clone this project
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jvzaniolo/.dotfiles/main/install)"
+git clone git@github.com:jvzaniolo/.dotfiles.git ~/.dotfiles
+```
+
+And run the install command
+```bash
+~/.dotfiles/install
 ```
 
 ## What it does
