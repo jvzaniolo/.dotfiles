@@ -6,7 +6,6 @@ brew "git"
 brew "mas"
 brew "sheldon"
 brew "yarn"
-brew "zsh"
 
 cask "authy"
 cask "discord"
