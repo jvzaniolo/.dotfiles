@@ -7,6 +7,7 @@
 - link:
     ~/.zshrc: home/.zshrc
     ~/.gitconfig: home/.gitconfig
+    ~/.hushlogin: home/.hushlogin
     ~/.sheldon:
       create: true
       path: home/sheldon
