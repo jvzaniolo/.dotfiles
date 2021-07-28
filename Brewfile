@@ -1,0 +1,16 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+brew "sheldon"
+brew "yarn"
+
+cask "authy"
+cask "discord"
+cask "docker"
+cask "figma"
+cask "insomnia"
+cask "notion"
+cask "rectangle"
+cask "visual-studio-code"
+cask "whatsapp"
