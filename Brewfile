@@ -9,7 +9,6 @@ brew "yarn"
 
 cask "authy"
 cask "discord"
-cask "docker"
 cask "figma"
 cask "insomnia"
 cask "notion"
