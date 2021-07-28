@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
-echo "\n<< Downloading Apps >>\n"
+echo "\n<<< Starting Brew Setup >>>\n"
 
-if type brew; then
+if command -v brew &> /dev/null; then
   echo "brew exists, skipping install"
 else
   echo "brew doesn't exist, continuing with install"
