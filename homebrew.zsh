@@ -1,6 +1,6 @@
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
-if exists brew; then
+if type brew; then
   echo "brew exists, skipping install"
 else
   echo "brew doesn't exist, continuing with install"
