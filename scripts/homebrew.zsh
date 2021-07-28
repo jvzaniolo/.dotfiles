@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 echo "\n<< Downloading Apps >>\n"
 
 if type brew; then

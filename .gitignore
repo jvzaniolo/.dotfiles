@@ -1,5 +1,5 @@
-home/sheldon/repos
-home/sheldon/plugins.lock
+home/.sheldon/repos
+home/.sheldon/plugins.lock
 
 Brewfile.lock.json
 

@@ -10,12 +10,18 @@
     ~/.hushlogin: home/.hushlogin
     ~/.sheldon:
       create: true
-      path: home/sheldon
+      path: home/.sheldon
 
 - create:
     - ~/Projects
 
 - shell:
-    - command: scripts/homebrew.zsh
+    - command: ./scripts/homebrew.zsh
+      stdout: true
+      stderr: true
+    - command: ./scripts/zsh.zsh
+      stdout: true
+      stderr: true
+    - command: ./scripts/macos.zsh
       stdout: true
       stderr: true
