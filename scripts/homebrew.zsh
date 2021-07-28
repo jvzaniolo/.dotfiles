@@ -1,4 +1,4 @@
-echo "\n<<< Starting Homebrew Setup >>>\n"
+echo "\n<< Downloading Apps >>\n"
 
 if type brew; then
   echo "brew exists, skipping install"

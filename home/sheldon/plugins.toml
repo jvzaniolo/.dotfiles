@@ -1,0 +1,27 @@
+# `sheldon` configuration file
+shell = "zsh"
+
+[plugins]
+
+[plugins.pre]
+local = "~/.fig/shell"
+
+[plugins.spaceship]
+github = "spaceship-prompt/spaceship-prompt"
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
+[plugins.fig]
+local = "~/.fig"
+
+[plugins.fast-syntax-highlighting]
+github = "zdharma/fast-syntax-highlighting"
+apply = ["defer"]
+
+[plugins.zsh-nvm]
+github = "lukechilds/zsh-nvm"
+apply = ["defer"]
+
+[templates]
+defer = { value = 'zsh-defer source "{{ file }}"', each = true }

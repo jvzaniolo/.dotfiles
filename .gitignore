@@ -1,4 +1,6 @@
-sheldon/plugins.lock
-sheldon/repos/*
+home/sheldon/repos
+home/sheldon/plugins.lock
 
 Brewfile.lock.json
+
+.DS_Store

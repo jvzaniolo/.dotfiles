@@ -5,16 +5,16 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc:
-    ~/.gitconfig:
+    ~/.zshrc: home/.zshrc
+    ~/.gitconfig: home/.gitconfig
     ~/.sheldon:
       create: true
-      path: sheldon
+      path: home/sheldon
 
 - create:
     - ~/Projects
 
 - shell:
-    - command: ./homebrew.zsh
+    - command: scripts/homebrew.zsh
       stdout: true
       stderr: true
