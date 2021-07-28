@@ -21,6 +21,7 @@ And run the install command
 ```
 
 ## What it does
+This project installs and configures several tools:
 
 ### Homebrew
 The Missing Package Manager for macOS (or Linux)
