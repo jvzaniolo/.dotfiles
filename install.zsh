@@ -2,8 +2,9 @@
 
 ln -s ~/.dotfiles/home/.sheldon ~
 ln -s ~/.dotfiles/home/.gitconfig ~
-ln -s ~/.dotfiles/home/.hushlogin ~
 ln -s ~/.dotfiles/home/.zshrc ~
+
+touch ~/.hushlogin
 
 mkdir ~/Projects
 
