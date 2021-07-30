@@ -17,7 +17,7 @@ git clone git@github.com:jvzaniolo/.dotfiles.git ~/.dotfiles
 
 And run the install command
 ```bash
-~/.dotfiles/install
+~/.dotfiles/install.zsh
 ```
 
 ## What it does
