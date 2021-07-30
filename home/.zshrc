@@ -1,11 +1,8 @@
-# Set Variables
+# Fig Pre Scripts
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 
 # NVM Options
 export NVM_AUTO_USE=true
-
-# Change ZSH Options
-
-# Create Aliases
 
 # Customize Prompt(s)
 SPACESHIP_PROMPT_ORDER=(
@@ -25,9 +22,8 @@ SPACESHIP_PROMPT_ORDER=(
 
 # Add Locations to $PATH Variables
 
-# Write Handy Functions
-
 # Use ZSH Plugins
 eval "$(sheldon source)"
 
-# ...and Other Surprises
+# Fig initial script
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh

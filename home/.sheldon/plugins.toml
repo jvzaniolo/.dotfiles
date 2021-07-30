@@ -3,19 +3,11 @@ shell = "zsh"
 
 [plugins]
 
-[plugins.pre]
-local = "~/.fig/shell"
-use = ["{{ name }}.sh"]
-
 [plugins.spaceship]
 github = "spaceship-prompt/spaceship-prompt"
 
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
-
-[plugins.fig]
-local = "~/.fig"
-use = ["{{ name }}.zsh"]
 
 [plugins.fast-syntax-highlighting]
 github = "zdharma/fast-syntax-highlighting"
