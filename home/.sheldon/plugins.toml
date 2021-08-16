@@ -9,12 +9,17 @@ github = "spaceship-prompt/spaceship-prompt"
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
 
-[plugins.fast-syntax-highlighting]
-github = "zdharma/fast-syntax-highlighting"
-apply = ["defer"]
-
 [plugins.zsh-nvm]
 github = "lukechilds/zsh-nvm"
+apply = ["defer"]
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+use = ["{{ name }}.zsh"]
+apply = ["defer"]
+
+[plugins.fast-syntax-highlighting]
+github = "zdharma/fast-syntax-highlighting"
 apply = ["defer"]
 
 [templates]
