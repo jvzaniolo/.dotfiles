@@ -1,3 +1,5 @@
 [user]
   email = 54036572+jvzaniolo@users.noreply.github.com
   name = João Vitor
+[init]
+	defaultBranch = main
