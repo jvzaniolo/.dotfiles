@@ -3,12 +3,8 @@ shell = "zsh"
 
 [plugins]
 
-[plugins.oh-my-zsh]
-github = "ohmyzsh/ohmyzsh"
-
-[plugins.dracula-pro]
-local = "~/.dotfiles/dracula-pro/themes/zsh"
-use = ["{{ name }}.zsh-theme"]
+[plugins.spaceship]
+github = "spaceship-prompt/spaceship-prompt"
 
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
