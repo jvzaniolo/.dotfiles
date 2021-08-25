@@ -8,10 +8,7 @@ osascript -e 'tell application "System Preferences" to quit'
 defaults write com.apple.finder ShowPathbar -bool true
 
 # System Preferences > Dock
-defaults write com.apple.dock magnification -bool true
-defaults write com.apple.dock tilesize -int 40
-defaults write com.apple.dock largesize -int 60
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock tilesize -int 30
 
 # Finish macOS Setup
 killall Finder
