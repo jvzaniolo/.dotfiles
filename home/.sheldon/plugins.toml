@@ -3,8 +3,8 @@ shell = "zsh"
 
 [plugins]
 
-[plugins.oh-my-zsh]
-github = "ohmyzsh/ohmyzsh"
+[plugins.spaceship]
+github = "spaceship-prompt/spaceship-prompt"
 
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"

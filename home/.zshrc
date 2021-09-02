@@ -3,10 +3,18 @@
 
 # NVM Options
 export NVM_AUTO_USE=true
-export ZSH="$HOME/.sheldon/repos/github.com/ohmyzsh/ohmyzsh"
 
 # Customize Prompt(s)
-ZSH_THEME="dracula-pro"
+SPACESHIP_PROMPT_ORDER=(
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=false
 
 # Add Locations to $PATH Variables
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home"
