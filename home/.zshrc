@@ -15,6 +15,7 @@ SPACESHIP_PROMPT_ORDER=(
 )
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_GIT_PREFIX=''
 
 # Add Locations to $PATH Variables
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home"
@@ -25,6 +26,10 @@ export JBOSS_HOME="/opt/jboss-eap-7.2"
 export WEB_ASSETS_PATH="$HOME/Projects/backcountry/bc-frontend"
 export BC_APACHE_HOME="$HOME/Projects/backcountry/atg-apache-configs"
 export ATG_HOME="/opt/atg/atg11.3.2"
+
+# Aliases
+alias bc-kraken-start="docker start docker_frontend_apache_1; vagrant up 5188513; cd $WEB_ASSETS_PATH && node server.js"
+alias bc-kraken-stop="docker stop docker_frontend_apache_1; vagrant halt 5188513"
 
 # Use ZSH Plugins
 eval "$(sheldon source)"
