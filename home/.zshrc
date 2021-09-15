@@ -2,6 +2,7 @@
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 
 # NVM Options
+export ZSH="$HOME/.sheldon/repos/github.com/ohmyzsh/ohmyzsh"
 export NVM_AUTO_USE=true
 
 # Customize Prompt(s)
