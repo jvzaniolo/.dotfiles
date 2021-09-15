@@ -3,19 +3,18 @@ shell = "zsh"
 
 [plugins]
 
-[plugins.spaceship]
-github = "spaceship-prompt/spaceship-prompt"
+[plugins.oh-my-zsh]
+github = "ohmyzsh/ohmyzsh"
+
+# theme
+[plugins.dracula-pro]
+local = "~/.dotfiles/dracula-pro/themes/zsh"
 
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
 
 [plugins.zsh-nvm]
 github = "lukechilds/zsh-nvm"
-apply = ["defer"]
-
-[plugins.zsh-autosuggestions]
-github = "zsh-users/zsh-autosuggestions"
-use = ["{{ name }}.zsh"]
 apply = ["defer"]
 
 [plugins.fast-syntax-highlighting]
