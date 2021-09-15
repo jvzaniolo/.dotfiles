@@ -13,11 +13,6 @@ github = "romkatv/zsh-defer"
 github = "lukechilds/zsh-nvm"
 apply = ["defer"]
 
-[plugins.zsh-autosuggestions]
-github = "zsh-users/zsh-autosuggestions"
-use = ["{{ name }}.zsh"]
-apply = ["defer"]
-
 [plugins.fast-syntax-highlighting]
 github = "zdharma/fast-syntax-highlighting"
 apply = ["defer"]
