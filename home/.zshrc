@@ -1,8 +1,14 @@
-# Fig Pre Scripts
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+# Use ZSH Plugins
+eval "$(sheldon source)"
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # NVM Options
-export ZSH="$HOME/.sheldon/repos/github.com/ohmyzsh/ohmyzsh"
 export NVM_AUTO_USE=true
 
 # Customize Prompt(s)
@@ -32,8 +38,5 @@ export ATG_HOME="/opt/atg/atg11.3.2"
 alias bc-kraken-start="docker start docker_frontend_apache_1; vagrant up 5188513; cd $WEB_ASSETS_PATH && node server.js"
 alias bc-kraken-stop="docker stop docker_frontend_apache_1; vagrant halt 5188513"
 
-# Use ZSH Plugins
-eval "$(sheldon source)"
-
-# Fig initial script
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/home/.sheldon/repos/github.com/romkatv/powerlevel10k/config/p10k-robbyrussell.zsh.
+[[ ! -f ~/.dotfiles/home/.sheldon/repos/github.com/romkatv/powerlevel10k/config/p10k-robbyrussell.zsh ]] || source ~/.dotfiles/home/.sheldon/repos/github.com/romkatv/powerlevel10k/config/p10k-robbyrussell.zsh
