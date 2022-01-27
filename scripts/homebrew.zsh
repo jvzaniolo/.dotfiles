@@ -9,4 +9,4 @@ else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-brew bundle --verbose
+brew bundle --file=~/.dotfiles/Brewfile --verbose

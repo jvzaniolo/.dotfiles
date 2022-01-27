@@ -1,11 +1,11 @@
 #!/usr/bin/env zsh
 
-ln -s ~/.dotfiles/home/.sheldon ~
-ln -s ~/.dotfiles/home/.gitconfig ~
-ln -s ~/.dotfiles/home/.zshrc ~
-ln -s ~/.dotfiles/home/.p10k ~
+ln -s $HOME/.dotfiles/home/.sheldon ~
+ln -s $HOME/.dotfiles/home/.gitconfig ~
+ln -s $HOME/.dotfiles/home/.zshrc ~
+ln -s $HOME/.dotfiles/home/.p10k.zsh ~
 
 touch ~/.hushlogin
 
-source "scripts/homebrew.zsh"
-source "scripts/macos.zsh"
+source "$HOME/.dotfiles/scripts/homebrew.zsh"
+source "$HOME/.dotfiles/scripts/macos.zsh"
