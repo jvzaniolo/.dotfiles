@@ -1,18 +1,19 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 
-brew "git"
-brew "mas"
 brew "sheldon"
+brew "yarn"
 
-cask "authy"
-cask "1password"
 cask "discord"
+cask "fig"
+cask "figma"
+cask "font-fira-code"
+cask "google-chrome"
+cask "insomnia"
 cask "notion"
-cask "rectangle"
+cask "raycast"
+cask "spotify"
 cask "visual-studio-code"
 cask "whatsapp"
-
-mas "AdGuard for Safari", id: 1440147259
-mas "Meeter", id: 1510445899

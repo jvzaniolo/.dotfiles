@@ -1,9 +1,9 @@
 # João Vitor's .dotfiles
 This is a repository on which I add some initial configuration to my macOS.
 
-- Spaceship as prompt theme
+- Powerlevel10k as zsh theme (with instant prompt)
 - Syntax Highlighting
-- Sheldon for installing plugins
+- Sheldon for managing plugins
 - Git config
 - Homebrew with initial brews and casks
 
@@ -27,22 +27,18 @@ This project installs and configures several tools:
 The Missing Package Manager for macOS (or Linux)
 
 #### Formulaes
-- git
-- mas (Mac Apple Store CLI)
 - sheldon
 - yarn
 
 #### Casks
-- authy
 - discord
+- fig
 - figma
+- font-fira-code
+- google-chrome
 - insomnia
 - notion
-- rectangle
+- raycast
+- spotify
 - visual-studio-code
 - whatsapp
-
-#### App Store Apps
-- AdGuard for Safari
-- Bitwarden
-- Meeter

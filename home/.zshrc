@@ -1,8 +1,4 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -11,29 +7,40 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Use ZSH Plugins
 eval "$(sheldon source)"
 
-# NVM Options
-export NVM_AUTO_USE=true
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
 
-# Customize Prompt(s)
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_GIT_PREFIX=''
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
-# To customize prompt, run `p10k configure` or edit ~/.dotfiles/home/.sheldon/repos/github.com/romkatv/powerlevel10k/config/p10k-robbyrussell.zsh.
-[[ ! -f ~/.dotfiles/home/.sheldon/repos/github.com/romkatv/powerlevel10k/config/p10k-robbyrussell.zsh ]] || source ~/.dotfiles/home/.sheldon/repos/github.com/romkatv/powerlevel10k/config/p10k-robbyrussell.zsh
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
+export ATGJRE="$JAVA_HOME/bin/java"
+export ATG_HOME="/opt/atg/atg11.3.2"
+export JBOSS_HOME="/opt/jboss-eap-7.2"
+export JAVA_VM="$JAVA_HOME/bin/java"
+export DYNAMO_HOME="/opt/atg/atg11.3.2/home"
+export BC_APACHE_HOME="$HOME/Development/atg-apache-configs"
+export WEB_ASSETS_PATH="$HOME/Development/bc-frontend"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
