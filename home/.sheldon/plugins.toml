@@ -28,6 +28,9 @@ github = "zdharma-continuum/fast-syntax-highlighting"
 github = "nvm-sh/nvm"
 # apply = ["defer"]
 
+[plugins.nvm-auto-use]
+local = "~/.dotfiles/plugins"
+
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
 use = ["{{ name }}.zsh"]
