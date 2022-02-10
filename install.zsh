@@ -7,5 +7,7 @@ ln -s $HOME/.dotfiles/home/.p10k.zsh ~
 
 touch ~/.hushlogin
 
+mkdir ~/Code
+
 source "$HOME/.dotfiles/scripts/homebrew.zsh"
 source "$HOME/.dotfiles/scripts/macos.zsh"
