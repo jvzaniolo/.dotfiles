@@ -14,22 +14,14 @@ shell = "zsh"
 
 [plugins]
 
-# [plugins.zsh-defer]
-# github = "romkatv/zsh-defer"
-
-# [plugins.oh-my-zsh]
-# github = "ohmyzsh/ohmyzsh"
-
 [plugins.powerlevel10k]
 github = "romkatv/powerlevel10k"
 
 [plugins.fast-syntax-highlighting]
 github = "zdharma-continuum/fast-syntax-highlighting"
-# apply = ["defer"]
 
 [plugins.nvm]
 github = "nvm-sh/nvm"
-# apply = ["defer"]
 
 [plugins.nvm-auto-use]
 local = "~/.dotfiles/plugins"
@@ -37,7 +29,3 @@ local = "~/.dotfiles/plugins"
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
 use = ["{{ name }}.zsh"]
-# apply = ["defer"]
-
-# [templates]
-# defer = { value = 'zsh-defer source "{{ file }}"', each = true }
