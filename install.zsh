@@ -1,13 +1,20 @@
 #!/usr/bin/env zsh
 
-ln -s $HOME/.dotfiles/home/.sheldon ~
-ln -s $HOME/.dotfiles/home/.gitconfig ~
-ln -s $HOME/.dotfiles/home/.zshrc ~
-ln -s $HOME/.dotfiles/home/.p10k.zsh ~
+if [[ "$(uname)" == "Darwin" ]]; then
+    echo "Installing .dotfiles for macOS"
+    source $HOME/.dotfiles/install/macos.zsh
+elif [[ "$(uname)" == "Linux" ]]; then
+    echo "Installing .dotfiles for Linux/WSL"
+    source $HOME/.dotfiles/install/ubuntu.zsh
+fi
 
-touch ~/.hushlogin
+echo "Setting up SSH"
+mkdir $HOME/.ssh
+stow -R -t $HOME/.ssh -d $HOME/.dotfiles .ssh
+eval "$(ssh-agent -s)"
+ssh-add $HOME/.dotfiles/.ssh/id_ed25519
 
-mkdir ~/Developer
+echo "Creating Developer folder"
+mkdir $HOME/Developer
 
-source "$HOME/.dotfiles/scripts/homebrew.zsh"
-source "$HOME/.dotfiles/scripts/macos.zsh"
+echo "Dotfiles installed" 
