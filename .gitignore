@@ -1,8 +1,0 @@
-home/.sheldon/repos/
-home/.sheldon/plugins.lock
-
-dracula-pro/*
-
-Brewfile.lock.json
-
-.DS_Store

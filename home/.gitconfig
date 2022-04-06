@@ -1,10 +1,5 @@
 [user]
-  email = 54036572+jvzaniolo@users.noreply.github.com
+  email = jv.zaniolo@gmail.com
   name = João Vitor
 [init]
-	defaultBranch = main
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+  defaultBranch = main
