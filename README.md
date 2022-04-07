@@ -6,7 +6,7 @@ This is my personal .dotfiles manager, feel free to use it as a starting point.
 
 First, [create a personal token](https://github.com/settings/tokens/new)
 
-And if your are on Linux bash shell, change it to `zsh`
+**And if your are on Linux bash shell, change it to `zsh`**
 
 ```bash
 sudo apt install -y zsh
@@ -26,7 +26,7 @@ And wait for everything to finish 🎆
 ## What it does
 
 - Symlinks everything inside the `home` folder to your `$HOME` folder
-- Installs `zinit` as your `zsh` plugin manager
+- Uses `zinit` as your `zsh` plugin manager
 - Installs `powerlevel10k` as your `zsh` theme
 - Installs these `zsh` plugins
     - `fast-syntax-highlighting`
