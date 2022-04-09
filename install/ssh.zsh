@@ -1,10 +1,10 @@
 #!/usr/bin/env zsh
 
-echo "\n${bold}${red}==>${reset} ${bold}Setting up SSH"
+echo "${bold}${red}==>${reset} ${bold}Setting up SSH"
 
-mkdir $HOME/.ssh
+mkdir "$HOME/.ssh"
 
-stow -R -t $HOME/.ssh -d $HOME/.dotfiles .ssh
+stow -R -t "$HOME/.ssh" -d "$HOME/.dotfiles" .ssh
 
 eval "$(ssh-agent -s)"
 
