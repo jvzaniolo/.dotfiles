@@ -12,6 +12,7 @@ zinit wait lucid light-mode for \
         zdharma-continuum/fast-syntax-highlighting \
     atload"_zsh_autosuggest_start" \
         zsh-users/zsh-autosuggestions \
+    jvzaniolo/zsh-backcountry \
     lukechilds/zsh-nvm
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
