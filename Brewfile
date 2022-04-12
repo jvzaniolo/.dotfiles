@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 
 brew "stow"
+brew "starship"
 
 cask "discord"
 cask "figma"

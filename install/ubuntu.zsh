@@ -7,3 +7,6 @@ sudo apt install -y stow
 
 echo "${bold}${red}==>${reset} ${bold}Symlinking .dotfiles"
 stow -R -t "$HOME" -d "$HOME/.dotfiles" home
+
+echo "${bold}${red}==>${reset} ${bold}Installing starship prompt"
+curl -sS https://starship.rs/install.sh | sh
