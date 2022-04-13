@@ -16,7 +16,7 @@ chsh -s $(which zsh)
 Then, clone this repository
 
 ```bash
-git clone --recurse-submodules https://github.com/jvzaniolo/.dotfiles.git ~/.dotfiles
+git clone --recurse-submodules https://github.com/jvzaniolo/.dotfiles.git ~/.dotfiles && ~/.dotfiles/install.sh
 ```
 
 When asked for your github password, **paste the generated personal token**
@@ -27,26 +27,26 @@ And wait for everything to finish 🎆
 
 - Symlinks everything inside the `home` folder to your `$HOME` folder
 - Uses `zinit` as your `zsh` plugin manager
-- Installs `powerlevel10k` as your `zsh` theme
+- Installs `starship` as your `zsh` theme
 - Installs these `zsh` plugins
-    - `fast-syntax-highlighting`
-    - `zsh-autosuggestions`
-    - `zsh-nvm`
+  - `fast-syntax-highlighting`
+  - `zsh-autosuggestions`
+  - `zsh-nvm`
 
 **And if you are on `macOS`**
 
 - Installs `brew`
 - Installs these casks
-    - discord
-    - figma
-    - google-chrome
-    - insomnia
-    - notion
-    - spotify
-    - visual-studio-code
-    - whatsapp
-    - cleanshot
-    - bartender
+  - Discord
+  - Figma
+  - Google Chrome
+  - Insomnia
+  - Notion
+  - Spotify
+  - Visual Studio Code
+  - WhatsApp
+  - CleanShot
+  - bartender
 
 ## Author
 

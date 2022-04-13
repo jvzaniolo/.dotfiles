@@ -5,9 +5,9 @@ reset=$(tput sgr0)
 bold=$(tput bold)
 
 if [ "$(uname)" = "Darwin" ]; then
-    . ~/.dotfiles/install/macos.zsh
+  . ~/.dotfiles/install/macos.zsh
 elif [ "$(uname)" = "Linux" ]; then
-    . ~/.dotfiles/install/ubuntu.zsh
+  . ~/.dotfiles/install/ubuntu.zsh
 fi
 
 . ~/.dotfiles/install/ssh.zsh
@@ -15,4 +15,4 @@ fi
 echo "${bold}${red}==>${reset} ${bold}Creating Developer folder"
 mkdir ~/Developer
 
-echo "${bold}${red}==>${reset} ${bold}Dotfiles installed" 
+echo "${bold}${red}==>${reset} ${bold}Dotfiles installed"

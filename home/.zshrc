@@ -1,6 +1,6 @@
 export BCS_DIR=~/Developer
-export NVM_LAZY_LOAD=true
 export NVM_AUTO_USE=true
+export NVM_LAZY_LOAD=true
 
 source ~/zinit-install.zsh
 
