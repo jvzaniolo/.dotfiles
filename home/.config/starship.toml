@@ -3,7 +3,6 @@ add_newline=false
 format = """
 $username\
 $hostname\
-$directory\
 $git_branch\
 $git_commit\
 $git_state\
@@ -15,7 +14,12 @@ $line_break\
 $jobs\
 $status\
 $shell\
+$directory\
 $character"""
+
+[username]
+show_always=true
+format="[$user]($style) "
 
 [nodejs]
 symbol="⬢ "
