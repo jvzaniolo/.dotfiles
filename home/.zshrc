@@ -1,15 +1,13 @@
 export BCS_DIR=~/Developer
 export NVM_AUTO_USE=true
-export NVM_LAZY_LOAD=true
 
 source ~/zinit-install.zsh
 
 eval "$(starship init zsh)"
 
-zinit wait lucid light-mode for \
-  atinit"zicompinit; zicdreplay" \
-    zdharma-continuum/fast-syntax-highlighting \
-  atload"_zsh_autosuggest_start" \
-    zsh-users/zsh-autosuggestions \
-  jvzaniolo/zsh-backcountry \
-  jvzaniolo/zsh-nvm
+zinit light romkatv/zsh-defer
+
+zsh-defer zinit light zdharma-continuum/fast-syntax-highlighting
+zsh-defer zinit light zsh-users/zsh-autosuggestions
+zsh-defer zinit light jvzaniolo/zsh-backcountry
+zsh-defer zinit light jvzaniolo/zsh-nvm
