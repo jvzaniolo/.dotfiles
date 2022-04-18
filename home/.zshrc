@@ -1,8 +1,8 @@
-export BCS_DIR=~/Developer
+export PATH="/usr/local/sbin:$PATH"
+export BCS_DIR="$HOME/Developer"
 export NVM_AUTO_USE=true
 
-source ~/zinit-install.zsh
-
+. $HOME/zinit-install.zsh
 eval "$(starship init zsh)"
 
 zinit light romkatv/zsh-defer
