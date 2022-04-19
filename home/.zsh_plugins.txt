@@ -1,0 +1,7 @@
+sindresorhus/pure
+
+jvzaniolo/zsh-backcountry   kind:defer
+jvzaniolo/zsh-nvm           kind:defer
+
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
