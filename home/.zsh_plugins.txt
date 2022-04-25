@@ -1,4 +1,4 @@
-sindresorhus/pure
+dracula/zsh
 
 jvzaniolo/zsh-backcountry   kind:defer
 jvzaniolo/zsh-nvm           kind:defer
